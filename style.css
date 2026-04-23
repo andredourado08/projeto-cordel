@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    
+    --fonte-titulo: "Passion One", sans-serif;
+    --fonte-subtitulo: verdana, geneva, tahoma, sans-serif;
+    --fonte-padrão: "Sriracha", cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: rgba(169, 169, 169, 0.202);
+}
+
+header > h1{
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 10vw;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+header > p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-family: var(--fonte-subtitulo);
+    padding-bottom: 20px;
+    
+}
+
+header a,footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+section > p{
+    font-family: var(--fonte-padrão);
+    font-size: 4vw;
+    padding:1.5em 1.5em 1.5em 1em;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: white;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 7px 7px 7px 3px rgba(0, 0, 0, 0.337);
+    height: 800px;
+
+    display: flex;
+    align-items: center; 
+}
+
+section#img01 > p {
+    font-size: 3vw;
+    margin: 0 650px 0 30px;
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.501);
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 7px 7px 7px 3px rgba(0, 0, 0, 0.337);
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+section#img02 > p {
+    font-size: 3vw;
+    margin: 0 650px 0 30px;
+    padding: 3px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.501);
+    
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-subtitulo);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
